@@ -18,4 +18,4 @@ function Maior(a , b){
   }
 }
 
-module.exports = { somar, mensagemBoasVindas };
+module.exports = { somar, mensagemBoasVindas, Maior };
