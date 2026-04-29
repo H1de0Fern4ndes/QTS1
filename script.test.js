@@ -1,4 +1,4 @@
-const { somar, mensagemBoasVindas } = require('./script');
+const { somar, mensagemBoasVindas, verificarMaior } = require('./script');
 
 test('soma dois números', () => {
   expect(somar(2, 3)).toBe(5);
@@ -6,4 +6,7 @@ test('soma dois números', () => {
 
 test('mensagem de boas vindas', () => {
   expect(mensagemBoasVindas('Diogo')).toBe('Olá, Diogo!');
+});
+test('Verificar maior numero', () => {
+  expect(verificarMaior(1,2)).toBe(2);
 });
