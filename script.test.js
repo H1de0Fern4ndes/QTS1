@@ -7,6 +7,6 @@ test('soma dois números', () => {
 test('mensagem de boas vindas', () => {
   expect(mensagemBoasVindas('Diogo')).toBe('Olá, Diogo!');
 });
-test('Verificar maior numero', () => {
+test('verificar maior numero', () => {
   expect(verificarMaior(1,2)).toBe(2);
 });
