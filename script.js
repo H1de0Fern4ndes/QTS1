@@ -5,6 +5,7 @@ function somar(a, b) {
 function mensagemBoasVindas(nome) {
   return `Olá, ${nome}!`;
 }
+
 function Maior(a , b){
   if(a>b){
     return a;
@@ -15,6 +16,6 @@ function Maior(a , b){
   else {
     return a,b;
   }
-};
+}
 
 module.exports = { somar, mensagemBoasVindas };
