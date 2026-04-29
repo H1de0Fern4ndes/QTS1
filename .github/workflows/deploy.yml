@@ -8,10 +8,13 @@ on:
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
-
-    steps:
-      - name: Baixar código do repositório
-        uses: actions/checkout@v4
+     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm test
 
       - name: Enviar arquivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
