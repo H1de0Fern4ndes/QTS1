@@ -11,7 +11,7 @@ const {
   verificarLetra,
   calcularMedia,
   login
-} = require('./script');
+} = require('../script');
 
 
 test('soma dois números', () => {
