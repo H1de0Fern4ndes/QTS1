@@ -11,4 +11,4 @@ function buscarPeriododoCurso(id) {
 module.exports = {
   buscarCursoNoBanco,
   buscarPeriododoCurso
-};
+};;
