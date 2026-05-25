@@ -5,7 +5,8 @@ const { obterNomeUsuario } = require('../usuarioController');
 jest.spyOn(usuarioService, 'buscarUsuarioNoBanco');
 
 test('deve retornar o nome do usuário simulado', () => {
-  // definindo o que o mock vai retornar
+
+  // definindo o retorno falso
   usuarioService.buscarUsuarioNoBanco.mockReturnValue({
     id: 1,
     nome: 'João Mockado'
@@ -15,10 +16,13 @@ test('deve retornar o nome do usuário simulado', () => {
 
   expect(nome).toBe('João Mockado');
 });
+
 test('exemplo com jest.fn', () => {
   const funcaoFalsa = jest.fn();
+
   funcaoFalsa.mockReturnValue(10);
 
   expect(funcaoFalsa()).toBe(10);
+
   expect(funcaoFalsa).toHaveBeenCalled();
 });
